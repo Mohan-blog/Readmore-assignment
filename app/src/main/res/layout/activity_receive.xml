@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReceiveActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="The data coming from the main activity"
+        android:textSize="40dp" />
+
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:id="@+id/etuseroutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:hint="welcome"
+        android:textSize="20dp"
+        app:colorClickableText="@color/colorAccent"
+        app:trimCollapsedText="@string/read_more"
+        app:trimExpandedText="@string/read_less"
+        app:trimLength="9"
+        app:trimMode="trimModeLength" />
+    android:layout_marginLeft="20dp"/>
+
+
+</LinearLayout>
